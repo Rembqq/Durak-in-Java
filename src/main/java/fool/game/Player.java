@@ -4,17 +4,18 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class Player implements PlayerActions{
-    private final String playerName;
-    private LinkedList<Card> cards;
+    protected final String playerName;
+    protected LinkedList<Card> cards;
     public Player(String name) {
         playerName = name;
     }
 
-    public void turn() {
-        System.out.println("ss");
+    public LinkedList<Card> turn() {
+        System.out.println(playerName + " moves: ");
+        return
     }
-    public Card defense() {
-
+    public Card defense(Card opponentCard) {
+        
     }
 
 }

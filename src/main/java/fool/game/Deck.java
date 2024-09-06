@@ -17,8 +17,8 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
-    public void takeCard() {
-        cards.pop();
+    public Card takeCard() {
+        return cards.pop();
     }
 
 }

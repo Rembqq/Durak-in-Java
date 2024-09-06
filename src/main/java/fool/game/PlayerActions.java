@@ -1,6 +1,8 @@
 package fool.game;
 
+import java.util.LinkedList;
+
 public interface PlayerActions {
-    void turn();
+    LinkedList<Card> turn();
     Card defense();
 }
