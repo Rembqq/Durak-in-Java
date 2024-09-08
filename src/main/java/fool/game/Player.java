@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Player implements PlayerActions{
     protected final String playerName;
-    protected LinkedList<Card> cards;
+    protected LinkedList<Card> cards = new LinkedList<>();
     public Player(String name) {
         playerName = name;
     }
