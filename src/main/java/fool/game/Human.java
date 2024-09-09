@@ -1,5 +1,6 @@
 package fool.game;
 
+import java.sql.SQLOutput;
 import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Scanner;
@@ -7,6 +8,10 @@ import java.util.Scanner;
 public class Human extends Player implements PlayerActions {
 
     private Scanner scanner = new Scanner(System.in);
+
+    public Human(String name) {
+        super(name);
+    }
 
     public LinkedList<Card> turn() {
 
@@ -62,10 +67,24 @@ public class Human extends Player implements PlayerActions {
 //    }
 
 
-    public LinkedList<Card> defense(Card opponentCard) {
-        getCards();
+    public LinkedList<Card> defence(LinkedList<Card> opponentCards) {
 
-        return super.cards;
+        System.out.println("Opponent's cards: ");
+        for (int i = 0; i < opponentCards.size(); ++i) {
+            System.out.print(i + 1 + " -> " + opponentCards.get(i));
+        }
+
+        //getCards();
+        LinkedList<Card> selected = turn();
+        for (int i = 0; i < opponentCards.size(); ++i) {
+            Card c = opponentCards.get(i);
+            for(int j = 0; j < selected.size(); j++) {
+                Card defenceCard = selected.get(j);
+                if(c )
+            }
+        }
+
+        return cards;
     }
 
     public void removeBy(Card card) {

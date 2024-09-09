@@ -10,12 +10,15 @@ public class Player implements PlayerActions{
         playerName = name;
     }
 
+    @Override
     public LinkedList<Card> turn() {
         System.out.println(playerName + " moves: ");
-        return
+        return cards;
     }
-    public Card defense(Card opponentCard) {
-        
+
+    @Override
+    public LinkedList<Card> defence(LinkedList<Card> opponentCards) {
+        return null;
     }
 
 }

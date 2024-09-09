@@ -4,5 +4,5 @@ import java.util.LinkedList;
 
 public interface PlayerActions {
     LinkedList<Card> turn();
-    LinkedList<Card> defense(LinkedList<Card> opponentTurn);
+    LinkedList<Card> defence(LinkedList<Card> opponentCards);
 }
